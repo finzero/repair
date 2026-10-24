@@ -97,6 +97,7 @@ app_license = "mit"
 
 # before_install = "repair.install.before_install"
 # after_install = "repair.install.after_install"
+after_migrate = "repair.install.after_migrate"
 
 # Uninstallation
 # ------------
@@ -166,6 +167,12 @@ app_license = "mit"
 # 		"on_trash": "method"
 # 	}
 # }
+doc_events = {
+    "Order Repair": {
+        "before_submit": "repair.repair.doctype.order_repair.order_repair.before_submit"
+    }
+}
+
 
 # Scheduled Tasks
 # ---------------
